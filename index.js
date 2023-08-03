@@ -44,7 +44,7 @@ mongoose
     // return Recipe.deleteOne( { title: "Carrot Cake" } )
 
     .then((response) => {
-      console.log("Carrot Cake borrada")
+      console.log("Datos añadidos")
       return mongoose.connection.close()
       .then(() => {
         console.log("Connexion cerrada")
