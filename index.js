@@ -44,7 +44,12 @@ mongoose
     // return Recipe.deleteOne( { title: "Carrot Cake" } )
 
     .then((response) => {
+      // response.forEach((recipe) => {
+      //   console.log(recipe.title)
+      // })
+
       console.log("Datos añadidos")
+
       return mongoose.connection.close()
       .then(() => {
         console.log("Connexion cerrada")
